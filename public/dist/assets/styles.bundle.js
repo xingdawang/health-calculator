@@ -88,8 +88,8 @@ var update = __webpack_require__(4)(content, options);
 if(content.locals) module.exports = content.locals;
 
 if(false) {
-	module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/autoprefixer-loader/index.js!../node_modules/sass-loader/lib/loader.js!./style.scss", function() {
-		var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/autoprefixer-loader/index.js!../node_modules/sass-loader/lib/loader.js!./style.scss");
+	module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/autoprefixer-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./index.scss", function() {
+		var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/autoprefixer-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./index.scss");
 
 		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 
@@ -123,7 +123,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "body {\n  background: #ffff66; }\n", ""]);
+exports.push([module.i, "body {\n  background: #ffff66;\n  margin: 0;\n  padding: 0;\n  font-family: sans-serif; }\n", ""]);
 
 // exports
 

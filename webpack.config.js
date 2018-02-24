@@ -4,8 +4,8 @@ const path = require('path');
 
 const config = {
   entry: {
-    main: './src/test.js',
-    pageTwo: './src/style.scss'
+    components: './src/components/test.js',
+    styles: './src/styles/index.scss'
   },
   output: {
     path: path.resolve(__dirname, "public/dist/assets"),
