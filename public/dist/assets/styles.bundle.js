@@ -123,7 +123,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "body {\n  background: #ffff66;\n  margin: 0;\n  padding: 0;\n  font-family: sans-serif; }\n", ""]);
+exports.push([module.i, "body {\n  background: #ffcccc; }\n  body .home-page-content {\n    height: 400px;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-pack: center;\n        justify-content: center;\n    -ms-flex-align: center;\n        align-items: center; }\n    body .home-page-content .home-page-content-title {\n      text-align: center; }\n", ""]);
 
 // exports
 
