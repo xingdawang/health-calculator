@@ -1,4 +1,4 @@
-$background: lighten(red, 40%);
+$background: lighten(skyblue, 20%);
 $homepage_content_height: 400px;
 
 body {
@@ -14,5 +14,10 @@ body {
 			text-align: center;
 		}
 	}
-	
+
+	.not-found.error {
+		font-size: 3rem;
+		text-align: center;
+	}
+
 }

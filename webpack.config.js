@@ -4,7 +4,6 @@ const path = require('path');
 
 const config = {
   entry: {
-    components: './src/components/test.js',
     styles: './src/styles/index.scss'
   },
   output: {
