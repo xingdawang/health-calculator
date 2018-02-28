@@ -37,7 +37,7 @@ class UserForm extends Component {
 				<div className="container">
 					<form onSubmit={this.userInputForm} >
 						<div className="form-group">
-							<label>Date of Birth</label>
+							<label>Date of Birth (MM/DD/YYYY) </label>
 							<input
 								type="date"
 								name="dateOfBirth"
@@ -48,7 +48,7 @@ class UserForm extends Component {
 							/>
 						</div>
 						<div className="form-group">
-							<label>Height</label>
+							<label>Height (cm) </label>
 							<input
 								type="number"
 								name="height"
@@ -59,7 +59,7 @@ class UserForm extends Component {
 							/>
 						</div>
 						<div className="form-group">
-							<label>Weight</label>
+							<label>Weight (kg) </label>
 							<input
 								type="number"
 								name="weight"
