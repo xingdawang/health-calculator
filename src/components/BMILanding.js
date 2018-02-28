@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import UserForm from './UserForm'
-import NotFound from './NotFound'
 import CalcBMI from './CalcBMI'
 
 class BodyMassIndex extends Component {
