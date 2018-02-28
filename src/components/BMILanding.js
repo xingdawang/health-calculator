@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import UserForm from './UserForm'
 import NotFound from './NotFound'
+import CalcBMI from './CalcBMI'
 
 class BodyMassIndex extends Component {
 
@@ -25,13 +26,19 @@ class BodyMassIndex extends Component {
 	}
 
 	render() {
-		return (
-			<div>
+
+		if(this.state.height !== 0 && this.state.weight !== 0) {
+			return (
+				<div>
+					<CalcBMI state={this.state} />
+				</div>
+			)
+		} else {
+			return (
 				<UserForm onUserUpdate={this.userInputForm}/>
-				Not Finished
-				{ console.log(this.state) }
-			</div>
-		)
+			)
+		}
+		
 	}
 }
 
