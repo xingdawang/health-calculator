@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import UserForm from './UserForm'
 import NotFound from './NotFound'
 
-class BodyFatPercentage extends Component {
+class BodyMassIndex extends Component {
 
 	constructor(props) {
 		super(props);
@@ -35,4 +35,4 @@ class BodyFatPercentage extends Component {
 	}
 }
 
-export default BodyFatPercentage
+export default BodyMassIndex
