@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import BodyFatPercentage from './BodyFatPercentage'
 import '../styles/index.scss'
 
 class HomePage extends Component {
