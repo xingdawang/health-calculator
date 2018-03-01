@@ -36,17 +36,19 @@ class UserForm extends Component {
 			<div className="jumbotron">
 				<div className="container">
 					<form onSubmit={this.userInputForm} >
-						<div className="form-group">
-							<label>Date of Birth (MM/DD/YYYY) </label>
-							<input
-								type="date"
-								name="dateOfBirth"
-								className="form-control"
-								placeholder="Date of Birth"
-								value={this.state.dateOfBirth}
-								onChange={this.handleInputChange}
-							/>
-						</div>
+						{window.location.pathname == '/bmi' ? '' :
+							<div className="form-group">
+								<label>Date of Birth (MM/DD/YYYY) </label>
+								<input
+									type="date"
+									name="dateOfBirth"
+									className="form-control"
+									placeholder="Date of Birth"
+									value={this.state.dateOfBirth}
+									onChange={this.handleInputChange}
+								/>
+							</div>
+						}
 						<div className="form-group">
 							<label>Height (cm) </label>
 							<input
