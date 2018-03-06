@@ -16,8 +16,8 @@ class CalcBMI extends Component {
 			<div className="container">
 				<div className="jumbotron col-md-12">
 					<div className="col-md-6">
-						<h3><span className="label label-primary"> Your height </span>: {this.state.height} </h3>
-						<h3><span className="label label-primary"> Your weight </span>: {this.state.weight} </h3>
+						<h3><span className="label label-primary"> Your height </span>: {this.state.height} cm</h3>
+						<h3><span className="label label-primary"> Your weight </span>: {this.state.weight} Kg</h3>
 						<h3>
 							<span className="label label-primary"> Your BMI </span>
 							: { (this.state.weight / this.state.height / this.state.height * 10000).toPrecision(4) }

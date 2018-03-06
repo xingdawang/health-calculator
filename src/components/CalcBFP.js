@@ -28,9 +28,9 @@ class CalcBFP extends Component {
 			<div className="container">
 				<div className="jumbotron col-md-12">
 					<div className="col-md-6">
-						<h3><span className="label label-primary"> Your height </span>: {this.state.height} </h3>
-						<h3><span className="label label-primary"> Your weight </span>: {this.state.weight} </h3>
-						<h3><span className="label label-primary"> Your gender </span>: {this.state.gender} </h3>
+						<h3><span className="label label-primary"> Your height </span>: {this.state.height} cm</h3>
+						<h3><span className="label label-primary"> Your weight </span>: {this.state.weight} Kg</h3>
+						<h3><span className="label label-primary"> Your gender </span>: {Number(this.state.gender) ? 'Male' : 'Female'} </h3>
 						<h3><span className="label label-primary"> Your birthdate </span>: {this.state.dateOfBirth} </h3>
 						<h3>
 							<span className="label label-primary"> Your BFP </span>: {this.calcBfp()}

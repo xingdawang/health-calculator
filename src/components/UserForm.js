@@ -11,7 +11,7 @@ class UserForm extends Component {
 			dateOfBirth: '',
 			height: 0,
 			weight: 0,
-			gender: 0
+			gender: 1
 		}
 
 	userInputForm = (event) => {
@@ -26,7 +26,6 @@ class UserForm extends Component {
 	}
 
 	handleInputChange = (event) => {
-		console.log(event.target)
 		const target = event.target;
 		const name = target.name;
 		this.setState({
@@ -80,9 +79,8 @@ class UserForm extends Component {
 									<select
 										className="form-control"
 										name="gender"
-										onChange={this.handleChange}
+										onChange={this.handleInputChange}
 									>
-
 										<option value="1">Male</option>
 										<option value="0">Female</option>
 									</select>
