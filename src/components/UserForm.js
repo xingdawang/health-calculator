@@ -10,7 +10,8 @@ class UserForm extends Component {
 	state = {
 			dateOfBirth: '',
 			height: 0,
-			weight: 0
+			weight: 0,
+			gender: 0
 		}
 
 	userInputForm = (event) => {
@@ -19,11 +20,13 @@ class UserForm extends Component {
 		this.props.onUserUpdate({
 			'dateOfBirth': this.state.dateOfBirth,
 			'height': this.state.height,
-			'weight': this.state.weight
+			'weight': this.state.weight,
+			'gender': this.state.gender
 		});
 	}
 
 	handleInputChange = (event) => {
+		console.log(event.target)
 		const target = event.target;
 		const name = target.name;
 		this.setState({
@@ -36,7 +39,7 @@ class UserForm extends Component {
 			<div className="jumbotron">
 				<div className="container">
 					<form onSubmit={this.userInputForm} >
-						{window.location.pathname == '/bmi' ? '' :
+						{window.location.pathname === '/bmi' ? '' :
 							<div className="form-group">
 								<label>Date of Birth (MM/DD/YYYY) </label>
 								<input
@@ -71,6 +74,21 @@ class UserForm extends Component {
 								onChange={this.handleInputChange}
 							/>
 						</div>
+						{window.location.pathname === '/bmi' ? '' :
+							<div className="form-group">
+								<label>Gender
+									<select
+										className="form-control"
+										name="gender"
+										onChange={this.handleChange}
+									>
+
+										<option value="1">Male</option>
+										<option value="0">Female</option>
+									</select>
+								</label>
+							</div>
+						}
 						<button type="submit" className="btn btn-default">Submit</button>
 					</form>
 				</div>
@@ -79,4 +97,4 @@ class UserForm extends Component {
 	}
 }
 
-export default UserForm
+export default UserForm 
