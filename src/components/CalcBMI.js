@@ -24,6 +24,7 @@ class CalcBMI extends Component {
 						</h3>
 					</div>
 					<div className="col-md-6">
+						{window.location.pathname === '/bmi' ?
 						<Chart
 							chartType="Gauge"
 							data={[
@@ -46,7 +47,32 @@ class CalcBMI extends Component {
 							width="100%"
 							height="300px"
 							legend_toggle
-						/>
+						/> :
+						<Chart
+							chartType="Gauge"
+							data={[
+								['Label', 'Value'],
+								['BMI', Number((this.state.weight / this.state.height / this.state.height * 10000).toPrecision(4)) ]
+							]}
+							options={{
+								redFrom: 35, redTo: 55,
+								yellowFrom: 25, yellowTo: 35,
+								greenFrom: 10, greenTo: 25,
+								majorTicks : ['15', '20','25','30','35','40','45','50'],
+								minorTicks: 5,
+								animation:{
+									duration: 1000,
+									easing: 'inAndOut'
+								},
+								max: 50, min: 15
+							}}
+							graph_id="GaugeChart"
+							width="100%"
+							height="300px"
+							legend_toggle
+						/> 
+					}
+
 					</div>
 				</div>
 			</div>
