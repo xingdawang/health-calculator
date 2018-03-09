@@ -13,9 +13,9 @@ ReactDOM.render(
 		<NavHeader />
 		<Router>
 			<Switch>
-				<Route path={process.env.PUBLIC_URL + '/'} exact component={HomePage} />
-				<Route path={process.env.PUBLIC_URL + '/bmi'} component={BodyMassIndex} />
-				<Route path={process.env.PUBLIC_URL + '/bfp'} component={BodyFatPercentage} />
+				<Route path={process.env.PUBLIC_URL + '/health-calculator'} exact component={HomePage} />
+				<Route path={process.env.PUBLIC_URL + '/health-calculator/bmi'} component={BodyMassIndex} />
+				<Route path={process.env.PUBLIC_URL + '/health-calculator/bfp'} component={BodyFatPercentage} />
 				<Route component={NotFound} />
 			</Switch>
 		</Router>
