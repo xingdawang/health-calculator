@@ -1,0 +1,23 @@
+$background: lighten(skyblue, 20%);
+$homepage_content_height: 400px;
+
+body {
+	background: $background;
+
+	.home-page-content {
+		height: $homepage_content_height;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.home-page-content-title {
+			text-align: center;
+		}
+	}
+
+	.not-found.error {
+		font-size: 3rem;
+		text-align: center;
+	}
+
+}
