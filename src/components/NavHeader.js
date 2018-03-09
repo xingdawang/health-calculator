@@ -14,13 +14,13 @@ class NavHeader extends Component {
 								<span className="icon-bar"></span>
 								<span className="icon-bar"></span>
 							</button>
-							<a className="navbar-brand" href="/">Lose Weight</a>
+							<a className="navbar-brand" href={process.env.PUBLIC_URL + '/health-calculator'}>Lose Weight</a>
 						</div>
 
 						<div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul className="nav navbar-nav">
-								<li><a href="/bmi" >Body Mass Index</a></li>
-								<li><a href="/bfp" >Body Fat Percentage</a></li>
+								<li><a href={process.env.PUBLIC_URL + '/health-calculator/bmi'} >Body Mass Index</a></li>
+								<li><a href={process.env.PUBLIC_URL + '/health-calculator/bfp'} >Body Fat Percentage</a></li>
 							</ul>
 							<ul className="nav navbar-nav navbar-right">
 							</ul>
