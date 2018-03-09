@@ -38,7 +38,7 @@ class UserForm extends Component {
 			<div className="jumbotron">
 				<div className="container">
 					<form onSubmit={this.userInputForm} >
-						{window.location.pathname === '/bmi' ? '' :
+						{window.location.pathname === {process.env.PUBLIC_URL + '/health-calculator/bmi'} ? '' :
 							<div className="form-group">
 								<label>Date of Birth (MM/DD/YYYY) </label>
 								<input
@@ -73,7 +73,7 @@ class UserForm extends Component {
 								onChange={this.handleInputChange}
 							/>
 						</div>
-						{window.location.pathname === '/bmi' ? '' :
+						{window.location.pathname === {process.env.PUBLIC_URL + '/health-calculator/bmi'} ? '' :
 							<div className="form-group">
 								<label>Gender
 									<select
